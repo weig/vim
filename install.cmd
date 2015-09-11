@@ -5,8 +5,8 @@ set GITBIN=
 set INSTALL_TEMP=%TEMP%\vimrc_install_%RANDOM%
 set PWD=%CD%
 set VIMRC_GIT=https://github.com/weig/vim
-set SOLARIZED_COLOR_GIT=https://github.com/altercation/solarized.git
-set PLUGIN_GIT=https://github.com/vim-scripts/vcscommand.vim.git https://github.com/kien/ctrlp.vim.git https://github.com/scrooloose/nerdtree.git https://github.com/scrooloose/nerdcommenter.git
+set SOLARIZED_COLOR_GIT=https://github.com/altercation/vim-colors-solarized.git
+set PLUGIN_GIT=https://github.com/plasticboy/vim-markdown.git https://github.com/nathanaelkane/vim-indent-guides.git https://github.com/jlanzarotta/bufexplorer.git https://github.com/vim-scripts/snipMate.git https://github.com/vim-scripts/vcscommand.vim.git https://github.com/kien/ctrlp.vim.git https://github.com/scrooloose/nerdtree.git https://github.com/scrooloose/nerdcommenter.git
 echo.
 echo Vim Configuration Setup Script
 echo ==============================
@@ -69,7 +69,7 @@ mkdir %HOME%\.vim
 :::::Install Solarized Color Theme
 echo Installing Solarized Color Theme...
 if not exist %HOME%\.vim\colors mkdir %HOME%\.vim\colors
-copy solarized\vim-colors-solarized\colors\solarized.vim %HOME%\.vim\colors > nul
+copy solarized\colors\solarized.vim %HOME%\.vim\colors > nul
 
 :::::Install Plugins
 for /d %%I in (%INSTALL_TEMP%\plugins\*) do (
