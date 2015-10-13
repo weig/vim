@@ -286,7 +286,7 @@
         set guioptions+=c   "use console dialog
         set lines=40        "use 40 lines instead of 24
     else
-        set term=buildin_ansi
+        set term=builtin_ansi
     endif
 " }
 
